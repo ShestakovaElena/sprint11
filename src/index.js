@@ -1,3 +1,11 @@
+import "./style.css";
+import {Api} from "./scripts/api";
+import {Card} from "./scripts/card";
+import {CardList} from "./scripts/cardList";
+import {FormValidator} from "./scripts/FormValidator";
+import {Popup} from "./scripts/popup";
+import {UserInfo} from "./scripts/userInfo";
+
 
 const errorMessages = {
   valueMissing: 'Это обязательное поле',

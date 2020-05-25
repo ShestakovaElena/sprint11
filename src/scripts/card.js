@@ -1,4 +1,4 @@
-class Card {
+export class Card {
   constructor(popupImage, bigImage) {
     this.myCard = document.createElement("div");
     this.popupImage = popupImage;

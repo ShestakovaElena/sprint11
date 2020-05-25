@@ -1,4 +1,4 @@
-class FormValidator {
+export class FormValidator {
   constructor(form, arr) {
     this.form = form;
     this.arr = arr;
