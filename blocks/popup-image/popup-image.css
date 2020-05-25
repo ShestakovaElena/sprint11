@@ -1,0 +1,6 @@
+@import url(./__big-image/popup__big-image.css);
+
+.popup__bg-image {
+    background-repeat: no-repeat;
+    position: relative;
+}
