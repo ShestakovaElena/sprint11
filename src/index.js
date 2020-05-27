@@ -6,7 +6,6 @@ import {FormValidator} from "./scripts/FormValidator";
 import {Popup} from "./scripts/popup";
 import {UserInfo} from "./scripts/userInfo";
 
-
 const errorMessages = {
   valueMissing: 'Это обязательное поле',
   tooShort: 'Должно быть от 2 до 30 символов',
@@ -30,8 +29,6 @@ const formEdit = document.forms.edit;
 const userInfoName = document.querySelector('.user-info__name');
 const userInfoJob = document.querySelector('.user-info__job');
 const userAvatar = document.querySelector('.user-info__photo');
-
-  
  
 const api = new Api({
   baseUrl: 'https://praktikum.tk/cohort10',
