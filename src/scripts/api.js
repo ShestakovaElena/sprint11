@@ -1,4 +1,4 @@
-class Api {
+export class Api {
   constructor(option) {
     this.option = option;
   }
@@ -18,9 +18,7 @@ class Api {
         return Promise.reject(new Error(`Не удалось получить данные. Ошибка:${res.status}`))
       })
       .catch((err) => {
-        // Можно лучше
-        // return Promise.reject(new Error(`Ошибка:${err.message}`));
-        return Promise.reject(err)
+        return Promise.reject(`Ошибка:${err.message}`)
       });
   }
 
@@ -36,7 +34,7 @@ class Api {
         return Promise.reject(new Error(`Не удалось получить данные. Ошибка:${res.status}`))
       })
       .catch((err) => {
-        return Promise.reject(err)
+        return Promise.reject(`Ошибка:${err.message}`)
       });
   }
 
@@ -57,7 +55,7 @@ class Api {
         return Promise.reject(new Error(`Не удалось получить данные. Ошибка:${res.status}`))
       })
       .catch((err) => {
-        return Promise.reject(err)
+        return Promise.reject(`Ошибка:${err.message}`)
       });
   }
 }

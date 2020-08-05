@@ -1,3 +1,10 @@
+import "./style.css";
+import {Api} from "./scripts/api";
+import {Card} from "./scripts/card";
+import {CardList} from "./scripts/cardList";
+import {FormValidator} from "./scripts/FormValidator";
+import {Popup} from "./scripts/popup";
+import {UserInfo} from "./scripts/userInfo";
 
 const errorMessages = {
   valueMissing: 'Это обязательное поле',
@@ -22,8 +29,6 @@ const formEdit = document.forms.edit;
 const userInfoName = document.querySelector('.user-info__name');
 const userInfoJob = document.querySelector('.user-info__job');
 const userAvatar = document.querySelector('.user-info__photo');
-
-  
  
 const api = new Api({
   baseUrl: 'https://praktikum.tk/cohort10',

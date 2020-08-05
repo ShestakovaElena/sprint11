@@ -1,5 +1,5 @@
 
-class UserInfo{
+export class UserInfo{
   constructor(form, userName, userInfo, avatar, popup){
     this.form = form;
     this.setUserInfo = this.setUserInfo.bind(this);
